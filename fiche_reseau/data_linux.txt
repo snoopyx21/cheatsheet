@@ -1,0 +1,17 @@
+• /bin - applications binaires importantes ;
+• /boot - fichiers de configuration du boot (amorçage) ;
+• /dev - fichiers de périphériques (devices) ;
+• /etc - fichiers de configuration, scripts de démarrage, etc. ;
+• /home - répertoires personnels (home) des utilisateurs ;
+• /lib - bibliothèques (libraries) système ;
+• /lost+found - fournit un système d'objets perdus+trouvés (lost+found) pour les fichiers se trouvant dans le répertoire racine (/) ;
+• /media - media montés (chargés) et éjectables commes des CDs, appareils photo numériques, clés USB, etc. ;
+• /mnt - systèmes de fichiers montés ;
+• /opt - emplacement pour installer des applications optionnelles ;
+• /proc - répertoire dynamique spécial qui tient à jour des informations sur l'état du système, y compris les processus actifs ;
+• /root - répertoire personnel du super-utilisateur (root), prononcez « slash-route » ;
+• /sbin - binaires système importants ;
+• /sys - fichiers système ;
+• /tmp - fichiers temporaires ;
+• /usr - applications et fichiers généralement accessibles à tous les utilisateurs (users) ;
+• /var - fichiers variables tels que journaux et bases de données.

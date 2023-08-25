@@ -1,0 +1,51 @@
+& 	ET par bit
+l 	OU inclusif par bit
+^ 	OU exclusif (ou XOR) par bit
+<< 	décalage de bits à gauche
+>> 	décalage de bits à droite
+~ 	complémentaire par bit
+
+
+Dans la suite, n est le rang du bit que l'on considère, a la valeur originale et b le résultat.
+
+Mettre un bit à 1 : Pour forcer un bit à 1 on utilise le OU binaire car 1 OU x = 1.
+
+	unsigned char b = a | (1 << n);
+
+Mettre un bit à 0: Pour forcer un bit à 0 on utilise le ET binaire car 0 ET x = 0 :
+
+	unsigned char b = a & ~(1 << n);
+
+Inverser la valeur du bit:
+
+	unsigned char b = a ^ (1 << n);
+
+Tester la valeur d'un bit:
+
+	unsigned char b = a & (1 << n);
+
+---------------------------------------------------------------------------------------
+
+unsigned a = 0xF0F0; /* a == 1111 0000 1111 0000 soit 0xF0F0 */
+unsigned b = 0x00FF; /* b == 0000 0000 1111 1111 soit 0xF0FF */
+unsigned c = a | b;  /* c == 1111 0000 1111 1111 soit 0xF0FF */
+
+unsigned a = 0xF0F0;
+unsigned b = 0x00FF;
+unsigned c = a & b; /* c == 0000000011110000 soit 0x00F0 */
+
+unsigned a = 0xF0F0;
+unsigned b = 0x00FF;
+unsigned c = a ^ b; /* c == 1111 0000 0000 1111 soit 0xF00F */
+
+
+unsigned a = 0xF0F0;
+unsigned b = 2;
+unsigned c = a >> b; /* c == 0011 1100 0011 1100 soit 0x3C3C */
+
+
+unsigned a = 0xF0F0;
+unsigned b = 2;
+unsigned c = a << b; /* c == 1100 0011 1100 0000 soit 0xC3C0 */
+
+--------------------------------------------------------------------------------------
